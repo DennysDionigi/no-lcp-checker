@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>LCP preloading</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <meta property="og:image" content="./cover-lcp-min.jpeg" itemprop="thumbnailUrl">
+  <meta property="og:description" content="LCP dynamic preload">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preload" as="script" href="./script.js">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="wrapper">
+  <div class="div1">
+    <header>
+      <h1>Hey there, lcp is:</h1>
+      <h2></h2>
+    </header>
+    <picture>
+      <img src="https://source.unsplash.com/random?example-preload;w=1000" width="1000" height="1000" decoding="eager" fetchpriority="high" alt="LCP Header" crossorigin="anonymous">
+    </picture>
+  </div>
+
+  <section class='w-smallGrid'>
+    <div class="div2">
+      <picture>
+        <img src="https://source.unsplash.com/random?1;w=500" width="1000" height="1000" loading="lazy" decoding="async" fetchpriority="low" alt="">
+      </picture>
+    </div>
+    <div class="div3">
+      <picture>
+        <img src="https://source.unsplash.com/random?2;w=500" width="1000" height="1000" loading="lazy" decoding="async" fetchpriority="low" alt="">
+      </picture>
+    </div>
+    <div class="div4">
+      <picture>
+        <img src="https://source.unsplash.com/random?3;w=500" width="1000" height="1000" loading="lazy" decoding="async" fetchpriority="low" alt="">
+      </picture>
+    </div>
+    <div class="div5">
+      <picture>
+        <img src="https://source.unsplash.com/random?4;w=500" width="1000" height="1000" loading="lazy" decoding="async" fetchpriority="low" alt="">
+      </picture>
+    </div>
+    <div class="div6">
+      <picture>
+        <img src="https://source.unsplash.com/random?5;w=500" width="1000" height="1000" loading="lazy" decoding="async" fetchpriority="low" alt="">
+      </picture>
+    </div>
+    <div class="div7">
+      <picture>
+        <img src="https://source.unsplash.com/random?6;w=500" width="1000" height="1000" loading="lazy" decoding="async" fetchpriority="low" alt="">
+      </picture>
+    </div>
+    <div class="div8">
+      <picture>
+        <img src="https://source.unsplash.com/random?7;w=500" width="1000" height="1000" loading="lazy" decoding="async" fetchpriority="low" alt="">
+      </picture>
+    </div>
+    <div class="div9">
+      <picture>
+        <img src="https://source.unsplash.com/random?8;w=500" width="1000" height="1000" loading="lazy" decoding="async" fetchpriority="low" alt="">
+      </picture>
+    </div>
+  </section>
+
+</main>
+<!-- partial -->
+  <script src="./script.js"></script>
+</body>
+</html>

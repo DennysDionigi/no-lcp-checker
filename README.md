@@ -1,2 +1,2 @@
-# no-lcp-checker
-Comparisoning repos
+# dynamic-lcp-preload
+Dynamic LCP solution
